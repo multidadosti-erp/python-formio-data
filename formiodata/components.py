@@ -212,6 +212,10 @@ class Component:
     def hidden(self):
         return self.raw.get('hidden')
 
+    @property
+    def hideLabel(self):
+        return self.raw.get('hideLabel')
+
     def _encode_value(self, value):
         return value
 
