@@ -8,7 +8,6 @@ setup(
     author='Bob Leers',
     author_email='bob@novacode.nl',
     license='MIT',
-    packages=packages,
     packages=find_packages(include=['formiodata']),
     package_dir={'formiodata': 'formiodata'},
     extras_require={
