@@ -1,7 +1,5 @@
 from setuptools import setup, find_packages
 
-packages = find_packages(exclude=['tests*'])
-
 setup(
     name='formio-data',
     version='2.1.0',
@@ -11,6 +9,8 @@ setup(
     author_email='bob@novacode.nl',
     license='MIT',
     packages=packages,
+    packages=find_packages(include=['formiodata']),
+    package_dir={'formiodata': 'formiodata'},
     extras_require={
         # Optional dependencies
         'json_logic': ['json-logic-qubit'],
