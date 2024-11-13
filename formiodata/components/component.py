@@ -81,6 +81,10 @@ class Component:
     def id(self):
         return self._id
 
+    @property
+    def hideLabel(self):
+        return self.raw.get('hideLabel')
+
     @id.setter
     def id(self, id=False):
         if not id:
